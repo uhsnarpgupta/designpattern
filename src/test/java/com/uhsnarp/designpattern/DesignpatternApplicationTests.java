@@ -2,6 +2,7 @@ package com.uhsnarp.designpattern;
 
 import com.uhsnarp.designpattern.prototype.ProtoFalse;
 import com.uhsnarp.designpattern.prototype.ProtoTrue;
+import com.uhsnarp.designpattern.repository.PresidentRepository;
 import com.uhsnarp.designpattern.singleton.SingA;
 import com.uhsnarp.designpattern.singleton.SingB;
 import org.junit.Assert;
@@ -32,6 +33,9 @@ public class DesignpatternApplicationTests {
     @Autowired
     ProtoFalse false2;
 
+    @Autowired
+    PresidentRepository presidentRepository;
+
     @Test
     public void contextLoads() {
     }
@@ -51,6 +55,12 @@ public class DesignpatternApplicationTests {
     public void testPrototypes() {
         Assert.assertSame(false1, false2);
         Assert.assertNotSame(true1, true2);
+    }
+
+    @Test
+    public void testRepository(){
+        System.out.println(presidentRepository.findById(1L));
+        System.out.println(presidentRepository.findById(2L));
     }
 
 }
