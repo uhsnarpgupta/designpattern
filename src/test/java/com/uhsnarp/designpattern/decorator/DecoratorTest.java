@@ -5,7 +5,7 @@ import org.junit.Test;
 public class DecoratorTest {
 
     @Test
-    public void testDecorator(){
+    public void testDecorator() {
         Pizza pizza = new ThickCrustPizza();
         System.out.println(pizza.getDescription());
         System.out.println(pizza.getCost());

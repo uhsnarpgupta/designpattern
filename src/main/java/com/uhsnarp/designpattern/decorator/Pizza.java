@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public abstract class Pizza {
     protected String description;
 
-    public String getDescription(){
+    public String getDescription() {
         return description;
     }
 

@@ -4,7 +4,8 @@ import java.math.BigDecimal;
 
 public class Pepperoni extends PizzaIngredient {
     private Pizza pizza;
-    public Pepperoni(Pizza pizza){
+
+    public Pepperoni(Pizza pizza) {
         super();
         this.pizza = pizza;
     }
